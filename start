@@ -1,4 +1,0 @@
-go mod init passphrase_bitcoin
-go mod edit -replace github.com/skip2/go-qrcode=./go-qrcode
-go mod tidy
-go build -ldflags "-s -w" -o passphrase_bitcoin main.go
