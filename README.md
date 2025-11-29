@@ -13,5 +13,20 @@ sudo apt install go
 On arch linux
 ```
 sudo pacman -S go
-'''
-## 3.xxx
+```
+## 3.Initializes a new Go module with the name passphrase_bitcoin and creates a go.mod file to manage dependencies.
+```
+go mod init passphrase_bitcoin
+```
+## 4.go mod edit -replace github.com/skip2/go-qrcode=./go-qrcode
+```
+Replaces the github.com/skip2/go-qrcode dependency with a local path ./go-qrcode instead of fetching it from GitHub.
+```
+## 5.go mod tidy
+```
+Cleans up the go.mod and go.sum files by removing unused dependencies and adding any missing ones.
+```
+## 6.Builds the Go project into an executable file named passphrase_bitcoin, with stripped debug information (-s -w flags).
+```
+go build -ldflags "-s -w" -o passphrase_bitcoin main.go
+```
