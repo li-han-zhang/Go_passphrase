@@ -14,19 +14,19 @@ On arch linux
 ```
 sudo pacman -S go
 ```
-## 3.Initializes a new Go module.
+## 3.Initializes a new Go module
 ```
 go mod init passphrase_bitcoin
 ```
-## 4.Replaces the github.com/skip2/go-qrcode dependency.
+## 4.Replaces the github.com/skip2/go-qrcode dependency
 ```
 go mod edit -replace github.com/skip2/go-qrcode=./go-qrcode
 ```
-## 5.Cleans up the go.mod and go.sum files.
+## 5.Cleans up the go.mod and go.sum files
 ```
 go mod tidy
 ```
-## 6.Builds the Go project into an executable file.
+## 6.Builds the Go project into an executable file
 ```
 go build -ldflags "-s -w" -o passphrase_bitcoin main.go
 ```
@@ -34,3 +34,4 @@ go build -ldflags "-s -w" -o passphrase_bitcoin main.go
 ```
 ./passphrase_bitcoin -b -p
 ```
+### You can just download the executable file, passphrase_bitcoin, and use it.
