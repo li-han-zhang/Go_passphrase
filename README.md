@@ -1,5 +1,5 @@
 # Introduction
-    Some crypto wallets can only create a 12‑word passphrase. However, this tool can generate a 24‑word passphrase, and it also allows you to edit the binary file that the passphrase is derived from.
+Some crypto wallets can only create a 12‑word passphrase. However, this tool can generate a 24‑word passphrase, and it also allows you to edit the binary file that the passphrase is derived from.
 This tool generates passphrases using BIP‑39, which contains 2048 words. Each word represents 11 bits of binary data, and you can modify the binary file as randomly as you like.
 # Installation
 ## 1.Clone this repository
