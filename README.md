@@ -14,19 +14,19 @@ On arch linux
 ```
 sudo pacman -S go
 ```
-## 3.Initializes a new Go module with the name passphrase_bitcoin and creates a go.mod file to manage dependencies.
+## 3.Initializes a new Go module.
 ```
 go mod init passphrase_bitcoin
 ```
-## 4.Replaces the github.com/skip2/go-qrcode dependency with a local path ./go-qrcode instead of fetching it from GitHub.
+## 4.Replaces the github.com/skip2/go-qrcode dependency.
 ```
 go mod edit -replace github.com/skip2/go-qrcode=./go-qrcode
 ```
-## 5.Cleans up the go.mod and go.sum files by removing unused dependencies and adding any missing ones.
+## 5.Cleans up the go.mod and go.sum files.
 ```
 go mod tidy
 ```
-## 6.Builds the Go project into an executable file named passphrase_bitcoin, with stripped debug information (-s -w flags).
+## 6.Builds the Go project into an executable file.
 ```
 go build -ldflags "-s -w" -o passphrase_bitcoin main.go
 ```
