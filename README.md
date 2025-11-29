@@ -1,6 +1,6 @@
 # Introduction
 Some Crypto Wallet can only create 12-word passphrase, but now the tool can create a 24-word passphrase and you are able to edit the binary-based file that can devires passphrase.
-# Usage
+# Installation
 ## 1.Clone this repository
 ```
 git clone https://github.com/li-han-zhang/Go_passphrase.git
@@ -29,4 +29,8 @@ go mod tidy
 ## 6.Builds the Go project into an executable file.
 ```
 go build -ldflags "-s -w" -o passphrase_bitcoin main.go
+```
+# Usage
+```
+./passphrase_bitcoin -b -p
 ```
