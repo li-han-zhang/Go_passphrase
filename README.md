@@ -6,4 +6,12 @@ Some Crypto Wallet can only create 12-word passphrase, but now the tool can crea
 git clone https://github.com/li-han-zhang/Go_passphrase.git
 ```
 ## 2.Install Go
-
+On ubuntu
+```
+sudo apt install go
+```
+On arch linux
+```
+sudo pacman -S go
+'''
+## 3.xxx
