@@ -33,6 +33,18 @@ go build -ldflags "-s -w" -o passphrase_bitcoin main.go
 ```
 # Usage
 ```
-./passphrase_bitcoin -b -p
+./passphrase_bitcoin 
+passphrase_bitcoin - A 256-bit entropy & BIP39 passphrase generator
+
+Usage:
+  passphrase_bitcoin [options]
+
+Options:
+  -b        Generate binary.txt only
+  -p        Generate passphrase from binary.txt
+  -q        Generate QR code of passphrase from binary.txt
+  -i WORD   Show WORD's index and 11-bit binary
+  -i BIN    Show BIN's index and corresponding word
+  -h        Show this help message
 ```
 ### You can just download the executable file, passphrase_bitcoin, and use it.
