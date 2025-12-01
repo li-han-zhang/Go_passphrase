@@ -48,3 +48,4 @@ Options:
   -h        Show this help message
 ```
 ### You can just download the executable file, passphrase_bitcoin, and use it.
+# I have authorized the project to [user:uvns](https://github.com/uvns/Passphrase.git)
